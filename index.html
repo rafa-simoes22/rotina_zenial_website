@@ -10,44 +10,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@500&display=swap" rel="stylesheet">
 </head>
 <style>
-    body{
-        margin: 0;
-        padding: 0;
-        font-family: 'Arima';
-        background-color: #EBFFC5;
-    }
-    nav {
-        height: 250px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-    footer {
-        height: 250px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    #titulo {
-        color: black; 
-        font-size: 96px; 
-        font-weight: 400;
-        justify-content: center;
-        align-items: center;
-    }
-    .titulo{
-        width: 300px; 
-        height: 250px;
-    }
-    #introdução {
+ 
+
+    /* Estilos para smartphones (por exemplo, iPhone, Android em retrato) */
+/* Estilos gerais */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EBFFC5;
+}
+
+nav, footer {
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#titulo {
+  color: black; 
+  font-size: 96px; 
+  font-weight: 400;
+  font-family: 'Arima';
+}
+
+.titulo {
+  width: 300px; 
+  height: 100%; /* Alterado para 100% para garantir altura consistente */
+}
+
+#introdução {
         display: flex; 
         align-items: center; 
         justify-content: center;
     }
-    #cont1{
+
+#cont1{
         background-color: #EDFFE7; 
         border-radius: 10px; 
         border-style: solid; 
@@ -57,51 +57,47 @@
         padding: 1%;
         font-size: 20px;
         text-align: justify;
+        font-family: Inter;
+       
     }
-    #cont2 {
-        
-    }
-    #cont3 {
 
-    }
-    #cont {
-        display: flex; justify-content: center; align-items: center; flex-flow: row; gap: 15%; margin-top: 30px;
-    }
-    #descrição {
-        width: 30%; background-color: #EDFFE7; border-radius: 10px; padding: 1%; font-size: 20px;
-    }
+/* Estilos para smartphones (por exemplo, iPhone, Android em retrato) */
+@media only screen and (max-width: 867px) {
+  .titulo {
+    width: 100px; 
+    height: 100px; /* Ajustado para altura menor */
+  }
+
+  #titulo {
+    font-size: 27.2px; 
+  }
+
+  #cont1{
+    font-size: 16px;
+    padding: 0.5%;
+  }
+}
+
+
+
 </style>
 <body>
     <nav>
         <img class="titulo" src="src/img/esquerda.PNG" /> 
+        
         <p id="titulo">Rotina Zenial</p>
         <img class="titulo" src="src/img/direita.PNG" /> 
     </nav>
+
+    <div>Home, Sobre o App, Intalar</div>
+
     <section id="introdução">
         <div id="cont1">
             <p>Você sabia que no Brasil cerca de 77% dos jovens afirmam que o uso do telefone afeta sua priorização de tarefas? E imagine como seria ótimo conseguir organizar nossas atividades de forma eficiente, sem precisar abrir mão do nosso telefone? Apresentamos o Rotina Zenial, uma ferramenta útil nos pequenos e grandes desafios durante o Ensino Médio.</p>
             <p>Vivemos em um mundo acelerado, onde a priorização entre tantas tarefas torna-se um desafio crescente a cada dia. O Rotina Zenial surge como uma solução inovadora para simplificar e apoiar os jovens durante o Ensino Médio, auxiliando na gestão de tarefas e matérias. Ele oferece uma resposta para que essas atividades não se tornem mais uma fonte de estresse.</p>
         </div>
     </section>
-    <section id="cont">
-        <div id="descrição">
-            <p><strong>Descrição do aplicativo</strong></p>
-            <p>Ao integrar o Rotina Zenial à sua rotina, os usuários experimentam uma redução significativa em problemas como a incerteza por onde começar, a sensação de que as tarefas são sobrecarregantes e um ambiente hostil. O aplicativo utiliza um algoritmo que auxilia na priorização das tarefas, considerando a data de entrega, a importância, os pontos a serem alcançados e a dificuldade específica de uma tarefa ou matéria. Além disso, o Rotina Zenial preocupa-se com a saúde mental, fornecendo mensagens personalizadas de acordo com o humor do usuário e até um jogo motivacional para tornar a abordagem das tarefas mais leve e divertida.</p>
-        </div>
-
-        <div id="exemplodeuso" style="width: 30%; background-color: #EDFFE7; border-radius: 10px; padding: 1%; font-size: 20px;">
-            <p><strong>Exemplos de uso</strong></p>
-            <p>Imagine ter o controle preciso dos pontos necessários em uma matéria e contar com um aplicativo que leva em consideração como você realiza uma tarefa para organizar sua rotina. Receber notificações sobre o que precisa ser feito e não se preocupar em deixar algo importante de lado por não saber por onde começar. O Rotina Zenial não é apenas uma possibilidade; ele torna-se uma parte essencial da sua rotina, permitindo que você alcance seus objetivos de maneira eficiente, inspirando-o nos dias difíceis e proporcionando motivação com um jogo, sem se distrair do que realmente importa.</p>
-        </div>
-    </section>
-
-    <section style="display: flex; align-items: center; justify-content: center; margin-top: 30px; ">
-        <div style="background-color: #EDFFE7; border-radius: 10px; border-style: solid; border-width: 0.5px; border-color: #568200; width: 80%; padding: 1%;
-        font-size: 20px;
-        text-align: justify;">
-            <p>O Rotina Zenial está pronto para transformar sua rotina e a forma como você lida com as tarefas, oferecendo eficiência, organização e mais tempo para o que realmente importa. Não perca a oportunidade de experimentar essa revolução. Faça o download agora e descubra como simplificar sua rotina pode ser fácil e prazeroso. Transforme sua forma de encarar o dia a dia com o Rotina Zenial.</p>
-        </div>
-    </section>
+   
     <footer>
         <img class="titulo" src="src/img/finalesquerda.png" /> 
         <img class="titulo" src="src/img/finaldireita.png" /> 
