@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotina Zenial</title>
+    <title>Download</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arima:wght@500&display=swap" rel="stylesheet">
@@ -58,7 +58,6 @@ footer{
         flex-direction: column;
         gap: 50px;
     }
-
 .cont1{
         background-color: #EDFFE7; 
         border-radius: 10px; 
@@ -109,14 +108,22 @@ a {
   width: 140px;
   height: 140px;
   border-radius: 10%;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: #568200;
+ 
  
 }
 
 #imagens{
   display: flex; justify-content: center; align-items: center; flex-flow: row; gap: 12% ; width: 80%;
+}
+
+button{
+    width: 90px;
+    height: 40px;
+    background-color: #c3f764;
+    border-radius: 10%;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #568200;
 }
 
 /* Estilos para smartphones (por exemplo, iPhone, Android em retrato) */
@@ -133,6 +140,15 @@ a {
   .titulo {
     width: 80px;
     height: 80px; /* Ajustado para altura menor */
+  }
+
+  .qrcode{
+    width: 290px;
+    height: 290px; 
+    border-radius: 10%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #568200;
   }
 
   #titulo {
@@ -155,7 +171,7 @@ a {
     <nav>
         <img class="titulo" src="src/img/esquerda.PNG" /> 
         <div style="display: flex; justify-content: center; align-items: center;">
-        <p id="titulo">Rotina Zenial</p>
+        <p id="titulo">Download</p>
       </div>
         <img class="titulo" src="src/img/direita.PNG" /> 
     </nav>
@@ -173,19 +189,20 @@ a {
     <section id="introdução">
      
         <div class="cont1">
-            <p style="margin: 12px; ">  Você sabia que no Brasil cerca de 77% dos jovens afirmam que o uso do telefone afeta sua priorização de tarefas? E imagine como seria ótimo conseguir organizar nossas atividades de forma eficiente, sem precisar abrir mão do nosso telefone? Apresentamos o Rotina Zenial, uma ferramenta útil nos pequenos e grandes desafios durante o Ensino Médio.</p>
-            
+            <p style="margin: 12px; "> O Rotina Zenial está pronto para <strong>transformar sua rotina</strong>  e a forma como você lida com as tarefas, oferecendo eficiência, organização e mais tempo para o que realmente importa. Não perca a oportunidade de experimentar essa revolução. Faça o download agora e descubra como simplificar sua rotina pode ser fácil e prazeroso. Transforme sua forma de encarar o dia a dia com o Rotina Zenial seguindo o <strong>passo a passo abaixo</strong>:</p>   
         </div>
 
-        <div id="imagens">
-          <img id="logo" src="src/img/logo.png" /> 
-          <img id="logo" src="src/img/logo.png" /> 
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 20px;">
+          <p>Passo 1: instalando a aplicação utilizando o QRcode, ou o clicando no botão.</p> 
+        <img class="qrcode" src="src/img/qrcode.jfif" /> 
+        <button>
+<a id="link" href="https://drive.google.com/file/d/1RrR_6rSz9LOsap5miF7W6HvfEd-bobdn/view?usp=drivesdk">Link direto</a>
+</button>
         </div>
 
-        <div class="cont1">
-          <p style="margin: 12px; ">Vivemos em um mundo acelerado, onde a priorização entre tantas tarefas torna-se um desafio crescente a cada dia. O Rotina Zenial surge como uma solução inovadora para simplificar e apoiar os jovens durante o Ensino Médio, auxiliando na gestão de tarefas e matérias. Ele oferece uma resposta para que essas atividades não se tornem mais uma fonte de estresse.</p>
-          
-      </div>
+       
+        
+       
     </section>
    
     <footer>
