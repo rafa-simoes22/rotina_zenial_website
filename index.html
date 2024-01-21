@@ -1,16 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotina Zenial</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotina Zenial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arima:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <style>
+
  
 
     /* Estilos para smartphones (por exemplo, iPhone, Android em retrato) */
@@ -122,45 +122,119 @@ a {
 /* Estilos para smartphones (por exemplo, iPhone, Android em retrato) */
 @media only screen and (max-width: 867px) {
   nav,
+
   footer {
-    height: 80px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
   }
-
-  footer{
-    margin-top: 120px;
-  }
-
-  .titulo {
-    width: 80px;
-    height: 80px; /* Ajustado para altura menor */
-  }
-
   #titulo {
-    font-size: 30px;
+    color: black; 
+    font-size: 96px; 
+    font-weight: 400;
+    font-family: 'Arima';
   }
-
+  .titulo {
+    width: 300px; 
+    height: 100%;
+  }
+  #introdução {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+  }
   .cont1 {
-    font-size: 12.2px;
-    padding: 5px;
-    width: 80%;
+    background-color: #EDFFE7; 
+    border-radius: 10px; 
+    border-style: solid; 
+    border-width: 0.5px; 
+    border-color: #568200; 
+    width: 50px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Source Sans 3'; 
   }
-
   #menu {
-    width: 90%; /* Largura total para ocupar a tela em dispositivos móveis */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-color: #d8fc97;
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(105, 158, 70, 0.2); /* desfoque e cor conforme necessário */
   }
-}
+  #listanav {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arima';
+    font-size: smaller;
+    color: black;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  #logo {
+    width: 140px;
+    height: 150px;
+    border-radius: 10%;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #568200;
+  
+  }
+  #imagens {
+    display: flex; justify-content: center; align-items: center; flex-flow: row; gap: 12% ; width: 80%;
+  }
 
+}
+  @media only screen and (max-width: 867px) {
+    nav, footer {
+      height: 80px;
+    }
+    footer {
+      margin-top: 120px;
+    }
+    .titulo {
+      width: 80px;
+      height: 80px;
+    }
+    #titulo {
+      font-size: 30px;
+    }
+    .cont1 {
+      font-size: 12.2px;
+      padding: 5px;
+      width: 80%;
+    }
+    #menu {
+      width: 90%;
+    }
+  }
 </style>
 <body>
-    <nav>
-        <img class="titulo" src="src/img/esquerda.PNG" /> 
-        <div style="display: flex; justify-content: center; align-items: center;">
-        <p id="titulo">Rotina Zenial</p>
-      </div>
-        <img class="titulo" src="src/img/direita.PNG" /> 
-    </nav>
+  <nav>
+    <img class="titulo" src="src/img/esquerda.PNG" /> 
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <p id="titulo">Rotina Zenial</p>
+    </div>
+    <img class="titulo" src="src/img/direita.PNG" /> 
+  </nav>
 
-    <section style="display: flex; align-items: center; justify-content: center;">
+  <section style="display: flex; align-items: center; justify-content: center;">
     <div id="menu">
       <ul id="listanav">
         <li><a href="index.html">Home</a></li>
@@ -171,27 +245,24 @@ a {
     </div>
   </section>
 
-    <section id="introdução">
-     
-        <div class="cont1">
-            <p style="margin: 12px; ">  Você sabia que no Brasil cerca de 77% dos jovens afirmam que o uso do telefone afeta sua priorização de tarefas? E imagine como seria ótimo conseguir organizar nossas atividades de forma eficiente, sem precisar abrir mão do nosso telefone? Apresentamos o Rotina Zenial, uma ferramenta útil nos pequenos e grandes desafios durante o Ensino Médio.</p>
-            
-        </div>
+  <section id="introdução">
+    <div class="cont1">
+      <p style="margin: 12px; ">Você sabia que no Brasil cerca de 77% dos jovens afirmam que o uso do telefone afeta sua priorização de tarefas? E imagine como seria ótimo conseguir organizar nossas atividades de forma eficiente, sem precisar abrir mão do nosso telefone? Apresentamos o Rotina Zenial, uma ferramenta útil nos pequenos e grandes desafios durante o Ensino Médio.</p>
+    </div>
 
-        <div id="imagens">
-          <img id="logo" src="src/img/logo.png" /> 
-          <img id="logo" src="src/img/logo2.png" /> 
-        </div>
+    <div id="imagens">
+      <img id="logo" src="src/img/logo.png" /> 
+      <img id="logo" src="src/img/logo2.png" /> 
+    </div>
 
-        <div class="cont1">
-          <p style="margin: 12px; ">Vivemos em um mundo acelerado, onde a priorização entre tantas tarefas torna-se um desafio crescente a cada dia. O Rotina Zenial surge como uma solução inovadora para simplificar e apoiar os jovens durante o Ensino Médio, auxiliando na gestão de tarefas e matérias. Ele oferece uma resposta para que essas atividades não se tornem mais uma fonte de estresse.</p>
-          
-      </div>
-    </section>
-   
-    <footer>
-        <img class="titulo" src="src/img/finalesquerda.png" /> 
-        <img class="titulo" src="src/img/finaldireita.png" /> 
-    </footer>
+    <div class="cont1">
+      <p style="margin: 12px; ">Vivemos em um mundo acelerado, onde a priorização entre tantas tarefas torna-se um desafio crescente a cada dia. O Rotina Zenial surge como uma solução inovadora para simplificar e apoiar os jovens durante o Ensino Médio, auxiliando na gestão de tarefas e matérias. Ele oferece uma resposta para que essas atividades não se tornem mais uma fonte de estresse.</p>  
+    </div>
+  </section>
+
+  <footer>
+    <img class="titulo" src="src/img/finalesquerda.png" /> 
+    <img class="titulo" src="src/img/finaldireita.png" /> 
+  </footer>
 </body>
 </html>
