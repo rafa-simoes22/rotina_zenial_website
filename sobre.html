@@ -10,160 +10,135 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <style>
- 
-
-    /* Estilos para smartphones (por exemplo, iPhone, Android em retrato) */
-/* Estilos gerais */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #EBFFC5;
-}
-
-nav {
-  height: 250px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
- 
-}
-
-footer{
-  height: 250px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: end;
-}
-
-#titulo {
-  color: black; 
-  font-size: 96px; 
-  font-weight: 400;
-  font-family: 'Arima';
-}
-
-.titulo {
-  width: 300px; 
-  height: 100%;
-/* Alterado para 100% para garantir altura consistente */
-}
-
-#introdução {
-        display: flex; 
-        align-items: center; 
-        justify-content: center;
-        flex-direction: column;
-        gap: 50px;
-    }
-
-.cont1{
-        background-color: #EDFFE7; 
-        border-radius: 10px; 
-        border-style: solid; 
-        border-width: 0.5px; 
-        border-color: #568200; 
-        width: 50px;
-     
-        font-size: 20px;
-        text-align: justify;
-        font-family: 'Source Sans 3';
-       
-    }
-
-    #menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  margin-top: 20px;
-  background-color: #d8fc97;
-  width: 80%; /* Largura desejada */
-  height: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(105, 158, 70, 0.2); /* Ajuste o deslocamento, desfoque e cor conforme necessário */
-}
-
-#listanav {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Arima';
-  font-size: smaller;
-  color: black;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-#logo{
-  width: 140px;
-  height: 140px;
-  border-radius: 10%;
-  border-style: solid;
-  border-width: 0.5px;
-  border-color: #568200;
- 
-}
-
-#imagens{
-  display: flex; justify-content: center; align-items: center; flex-flow: row; gap: 12% ; width: 80%;
-}
-
-.paleta{
-  width: 200px;
-  height: 100px;
-  border-radius: 10%;
-}
-
-/* Estilos para smartphones (por exemplo, iPhone, Android em retrato) */
-@media only screen and (max-width: 867px) {
-  nav,
-  footer {
-    height: 80px;
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #EBFFC5;
   }
-
+  nav {
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   footer{
-    margin-top: 120px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
   }
-
-  .titulo {
-    width: 80px;
-    height: 80px; /* Ajustado para altura menor */
-  }
-
   #titulo {
-    font-size: 30px;
+    color: black; 
+    font-size: 96px; 
+    font-weight: 400;
+    font-family: 'Arima';
   }
-
-  .cont1 {
-    font-size: 12.2px;
-    padding: 5px;
+  .titulo {
+    width: 300px; 
+    height: 100%;
+  }
+  #introdução {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .cont1{
+    background-color: #EDFFE7; 
+    border-radius: 10px; 
+    border-style: solid; 
+    border-width: 0.5px; 
+    border-color: #568200; 
+    width: 50px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Source Sans 3';  
+  }
+  #menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-color: #d8fc97;
+    width: 80%;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(105, 158, 70, 0.2); /*desfoque e cor conforme necessário*/
+  }
+  #listanav {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arima';
+    font-size: smaller;
+    color: black;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  #logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 10%;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #568200;
+  }
+  #imagens {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-flow: row; 
+    gap: 12% ; 
     width: 80%;
   }
-
-  #menu {
-    width: 90%; /* Largura total para ocupar a tela em dispositivos móveis */
+  .paleta {
+    width: 200px;
+    height: 100px;
+    border-radius: 10%;
   }
-}
-
+  @media only screen and (max-width: 867px) {
+    nav, footer {
+      height: 80px;
+    }
+    footer {
+      margin-top: 120px;
+    }
+    .titulo {
+      width: 80px;
+      height: 80px;
+    }
+    #titulo {
+      font-size: 30px;
+    }
+    .cont1 {
+      font-size: 12.2px;
+      padding: 5px;
+      width: 80%;
+    }
+    #menu {
+      width: 90%;
+    }
+  }
 </style>
 <body>
-    <nav>
-        <img class="titulo" src="src/img/esquerda.PNG" /> 
-        <div style="display: flex; justify-content: center; align-items: center;">
-        <p id="titulo">Sobre</p>
-      </div>
-        <img class="titulo" src="src/img/direita.PNG" /> 
-    </nav>
+  <nav>
+    <img class="titulo" src="https://i.ibb.co/hc6LZ47/esquerda.png" /> 
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <p id="titulo">Sobre</p>
+    </div>
+    <img class="titulo" src="https://i.ibb.co/mzzF7C6/direita.png" /> 
+  </nav>
 
   <section style="display: flex; align-items: center; justify-content: center;">
     <div id="menu">
@@ -199,15 +174,15 @@ a {
     <div class="cont1">
       <p style="margin: 12px; ">Essas funcionalidades não apenas simplificam a gestão do tempo, mas também capacitam os usuários a focarem em tarefas cruciais, reduzindo a sensação de sobrecarga e ansiedade. Ao adotar o Rotina Zenial, os usuários podem esperar uma transformação positiva em sua abordagem aos estudos, permitindo que eles alcancem seus objetivos acadêmicos de maneira mais eficiente e equilibrada.</p><br>
       <div style="display: flex; align-items: center; justify-content: center;">
-        <img class="paleta" src="src/img/paleta.png" />
+        <img class="paleta" src="https://i.ibb.co/wS7BYsT/paleta.png" />
       </div> 
       <p style="margin: 12px; "><br>A paleta de cores verde cuidadosamente escolhida não é apenas esteticamente agradável, mas também foi selecionada com base nos significados psicológicos associados a essa tonalidade. O verde é conhecido por representar harmonia, equilíbrio e crescimento. Ao incorporar tons de verde em nossa interface, buscamos criar uma atmosfera que promova a calma, a concentração e o otimismo.</p>
     </div>
   </section>
    
   <footer>
-    <img class="titulo" src="src/img/finalesquerda.png" /> 
-    <img class="titulo" src="src/img/finaldireita.png" /> 
+    <img class="titulo" src="https://i.ibb.co/P1D6Tc7/finalesquerda.png" /> 
+    <img class="titulo" src="https://i.ibb.co/gRw0nWy/finaldireita.png"/> 
   </footer>
 </body>
 </html>
